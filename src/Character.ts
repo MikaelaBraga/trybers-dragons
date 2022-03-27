@@ -14,7 +14,7 @@ class Chararter implements Fighter {
   private readonly _energy: Energy;
 
   constructor (name: string) {
-    this._race = new Elf(name, );
+    this._race = new Elf(name, ); // deve receber como segundo parâmetro metade do maxLifePoints -> estudar mais
     this._archetype = new Mage(name);
     this._maxLifePoints =
     this._lifePoints =
