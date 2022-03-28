@@ -13,10 +13,10 @@ class PVP extends Battle {
 
   fight(): number {
     do { // faça isso
-      this._character1.attack(this._character2);
+      this._character1.attack(this._character2); // personagem ataca personagem 2
       this._character2.attack(this._character1);
     } while // enquanto essa condição for verdadeira
-    (this._character1.lifePoints > 0 && this._character2.lifePoints > 0);
+    (this._character1.lifePoints > 0 && this._character2.lifePoints > 0); // os pontos de vida de ambos precisam ser maio que 0
 
     return this._character1.lifePoints === -1 ? -1 : 1; // conforme utilizado na classe Battle
   }
